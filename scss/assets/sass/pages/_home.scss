@@ -1,0 +1,83 @@
+#home{
+    min-height: 120vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    .container{
+        width: 742px;
+        min-height: 1506px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        @media screen and (max-width: 700px) 
+         {
+            .container{
+                max-width: 694px;
+                height: 1506px;
+
+            }
+            .txt{
+                max-width: fit-content;
+                gap: 3px;
+            }
+            .txt:nth-of-type(1){
+                font-size: 20px;
+               
+            }
+            .txt p{
+                max-width: 300px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                min-height: 150px;
+
+            }
+
+        }
+        .buton{
+            position: absolute;
+            bottom: 5px;
+            right: 0px;
+            width: 180px;
+            height: 55px;
+            background-color: #0085A1;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+        }
+        hr{
+            width: 100%;
+        }
+        .txt{
+            min-height: 320px;
+            max-width: 694px  ;
+            display: flex;
+            flex-direction: column;
+            align-items: center ;
+            justify-content: center;
+            gap: 10px;
+            :nth-of-type(1){
+                font-size: 35px;
+                font-weight: 700;
+                text-align: start;
+            }
+            :nth-of-type(2){
+                font-size: 28px;
+                text-align: start;
+                width: 694px;
+                color: #212529;
+            }
+                :nth-of-type(3){
+                    font-size: 20px;
+                    text-align: start;
+                    width: 694px;
+                    color: #6c757d;
+                }
+
+            }
+        }
+    }
